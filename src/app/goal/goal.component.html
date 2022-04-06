@@ -1,3 +1,11 @@
+<style>
+  h6{
+
+       color: red
+
+  }
+
+</style> 
 <div class="container">
   <h1>MY GOALS</h1>
   <hr>
@@ -16,8 +24,8 @@
       </div>
     </div>
     <div class="col-md-6">
-      <app-goal-form></app-goal-form>
-    </div>
+      <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
+ </div>
   </div>
   <p *ngIf='goals.length > 5'>You have too many goals</p>
 </div>
